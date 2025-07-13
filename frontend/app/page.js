@@ -84,7 +84,7 @@ export default function Home() {
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Nhập nội dung tin tức ở đây..."
+            placeholder="Nhập tiêu đề hoặc nội dung tin tức ở đây..."
             className="w-full h-40 p-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200"
             required
           />
@@ -101,7 +101,7 @@ export default function Home() {
                 className="w-full p-3 border border-gray-300 rounded-md bg-white focus:ring-2 focus:ring-blue-500"
               >
                 <option value="tfidf">TF-IDF</option>
-                <option value="bow">Bag-of-Words (BoW)</option>
+                <option value="bow">Bag-of-Words</option>
                 <option value="rnn">Deep Learning (RNN)</option>
               </select>
             </div>
