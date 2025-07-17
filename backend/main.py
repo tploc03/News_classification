@@ -47,10 +47,10 @@ model_rf_bow = load_model(os.path.join(MODEL_DIR, 'BoW/bow_model_random_forest.j
 model_svm_bow = load_model(os.path.join(MODEL_DIR, 'BoW/bow_model_svm.joblib'))
 
 # RNN Models
-rnn_config = load_model(os.path.join(MODEL_DIR, 'rnn_tokenizer_config.joblib'))
+rnn_config = load_model(os.path.join(MODEL_DIR, 'TF-IDF/rnn_tokenizer_config.joblib'))
 rnn_tokenizer = rnn_config['tokenizer'] if rnn_config else None
 MAX_LEN_RNN = rnn_config['max_len'] if rnn_config else 256
-model_rnn = load_model(os.path.join(MODEL_DIR, 'model_rnn.keras'))
+model_rnn = load_model(os.path.join(MODEL_DIR, 'TF-IDF/model_rnn.keras'))
 
 label_encoder = load_model(os.path.join(MODEL_DIR, 'label_encoder.joblib'))
 
